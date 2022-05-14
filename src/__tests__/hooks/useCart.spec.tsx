@@ -304,7 +304,7 @@ describe('useCart Hook', () => {
     });
 
     act(() => {
-      result.current.updateProductAmount({ amount: 2, productId });
+      result.current.updateProductAmount({ amount: 2, productId});
     });
 
     await waitForNextUpdate({ timeout: 200 });
@@ -345,7 +345,7 @@ describe('useCart Hook', () => {
     });
 
     act(() => {
-      result.current.updateProductAmount({ amount: 3, productId });
+      result.current.updateProductAmount({ amount: 2, productId});
     });
 
     await waitFor(
